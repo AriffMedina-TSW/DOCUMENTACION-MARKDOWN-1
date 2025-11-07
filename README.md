@@ -14,7 +14,7 @@ $$ A =
 0 & 1 \\
 \end{pmatrix}
 $$
-
+---
 MUESTRA
 
 Calcula la suma de A y B
@@ -47,5 +47,22 @@ $$ A + B =
 \end{pmatrix}
 $$
 
-FIN 
 ---
+# OTRO EJERCICIO
+...
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
