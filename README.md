@@ -1,6 +1,7 @@
 # Tecnológico de Software
 ## Materia: Fundamentos de álgebra
 ## Alumno: Ariff Iazid Medina Gómez
+## Grupo: C
 ## Actividad #16.  Documentación matrices
 
 ---
