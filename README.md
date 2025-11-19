@@ -2,202 +2,374 @@
 ## Materia: Fundamentos de álgebra
 ## Alumno: Ariff Iazid Medina Gómez
 ## Grupo: C
-## Actividad #16.  Documentación matrices
+## Actividad #18. Documentación de Ejercicios con Git Branches
+## Fecha de realización: 18/11/2025
+## Tema: Operaciones con matrices
 
 ---
 # Objetivo
 
-Familiarizarse con la clasificación y operaciones básicas de matrices, incluyendo suma, resta, multiplicación y transposición.
+Poder ser más agil con respecto a operaciones un poco más complicadas de matrices, entre las cuales se incluyen los determinantes, regla de Sarrus, Método de cofactores y las aplicaciones geométricas que se le pueden atribuir.
 
 ---
 
-# Ejercicio 1: Clasificación de matrices
+## Ejercicio 1: Determinantes 2x2 
+### Calcula los determinantes:
 
-## Objetivo del ejercicio: Reconocer y distinguir los distintos tipos de matrices de acuerdo con sus propiedades.
-
-
-### a) 
-
-$$A = \begin{bmatrix}
-1 & 0 \\
-0 & 1 
-\end{bmatrix}$$
-
-Es una **matriz identidad** porque tiene unos en su diagonal principal y ceros en el resto de sus posiciones. 
-
-### b) 
-
-$$ B = \begin{bmatrix}
-3 & 0 & 0 \\
-0 & -2 & 0 \\
-0 & 0 & 5 
-\end{bmatrix}  $$
-
-Es una **matriz diagonal**, pues todos sus elementos son ceros excepto los que se encuentran en la diagonal principal.
-
-### c)
-
-$$C = \begin{bmatrix}
-2 & 1 & 4 \\
-1 & 3 & 5 \\
-4 & 5 & 6 
-\end{bmatrix}  $$
-
-Se trata de una **matriz simétrica** porque cumple que $a_ij = a_ji$ es decir, sus elementos se reflejan respecto a la diagonal principal.
-
-### d)
-
-$$ D = \begin{bmatrix}
-1 & 2 & 3 \\
-0 & 4 & 5 \\
-0 & 0 & 6 
-\end{bmatrix}  $$
-
-Es una **matriz triangular** superior porque todos los elementos que se encuentran por debajo de la diagonal principal son ceros.
-
----
-
-# Ejercicio 2: Operaciones con matrices
-
-## Objetivo del ejercicio: Realizar operaciones fundamentales con matrices, como la suma, resta, multiplicación y transposición
-
-Dadas las siguientes matrices:
-
-$$ A = \begin{bmatrix}
-2 & -1 \\
-3 & 4 
-\end{bmatrix}, \quad B = \begin{bmatrix}
+$$ A =
+\begin{pmatrix}
 5 & 2 \\
--1 & 3 
-\end{bmatrix} $$
-
-Calculamos: 
-
-### a) \( A + B \)
-$$ A + B = \begin{bmatrix}
-2 + 5 & -1 + 2 \\
-3 + (-1) & 4 + 3
-\end{bmatrix} => \begin{bmatrix}
-7 & 1 \\
-2 & 7
-\end{bmatrix} $$
-
-### b) \(2A - B \)
-
-$$ 2A = \begin{bmatrix}
-2(2) & 2(-1) \\
-2(3) & 2(4)
-\end{bmatrix} => \begin{bmatrix}
-4 & -2 \\    
-6 & 8
-\end{bmatrix} $$
-$$ 2A - B = 2 \begin{bmatrix}
-4-5 & -2-2 \\
-6-(-1) & 8-3
-\end{bmatrix} => \begin{bmatrix}
--1 & -4 \\
-7 & 5
-\end{bmatrix} $$
-
-### c) \( AB \)
-$$ AB = \begin{bmatrix}
-2\cdot5+(-1)\cdot(-1) & 2\cdot2+(-1)\cdot3\\
-3\cdot5+4\cdot(-1)    & 3\cdot2+4\cdot3
-\end{bmatrix} => \begin{bmatrix}
-10 + 1 & 4 - 3\\
-15 - 4 & 6 + 12
-\end{bmatrix} => \begin{bmatrix}
-11 & 1 \\
-11 & 18
-\end{bmatrix} $$
-
-### d) \( BA \)
-$$ BA = \begin{bmatrix}
-(5\cdot2) + (2\cdot3) & (5\cdot-1) + (2\cdot4) \\
-(-1\cdot2) + (3\cdot3) & (-1\cdot-1) + (3\cdot4)
-\end{bmatrix} => \begin{bmatrix}
-10 + 6 & -5 + 8 \\
--2 + 9 & 1 + 12
-\end{bmatrix} => \begin{bmatrix}
-16 & 3 \\
-7 & 13
-\end{bmatrix} $$
-
-### e) \( A^T \)
-$$ A^T = \begin{bmatrix}
-2 & 3 \\
--1 & 4
-\end{bmatrix} $$
-
----
-
-# Ejercicio 3: Multiplicación cadena
-
-## Objetivo del ejercicio: Comprobar la propiedad asociativa de la multiplicación de matrices mediante el cálculo de productos en cadena.
-
-
----
-
+3 & 1 \\
+\end{pmatrix}
+$$
  
+### Procedimiento 
+#### *Paso 1: Multiplicar en diagonal*
+    (3)(2)(-1) = -6   |   (5)(1)(1) = 5
+#### *Paso 2: Sumar los productos*
+    (-6) + 5 = -1
+#### **Resultado:** det(A) = -1
 
-Dadas las matrices:
+$$ B =
+\begin{pmatrix}
+-1 & 4 \\
+2 & -8 \\
+\end{pmatrix}
+$$
+ 
+### Procedimiento 
+#### *Paso 1: Multiplicar en diagonal*
+    (2)(4)(-1) = -8   |   (-1)(-8)(1) = 8
+#### *Paso 2: Sumar los productos*
+    (-8) + 8 = 0
+#### **Resultado:** det(B) = 0
 
-$$ A = \begin{bmatrix}
-1 & 2 \\
-3 & 4 
-\end{bmatrix}, \quad B = \begin{bmatrix}
+$$ C =
+\begin{pmatrix}
+6 & 9 \\
+2 & 3 \\
+\end{pmatrix}
+$$
+
+### Procedimiento 
+#### *Paso 1: Multiplicar en diagonal*
+    (2)(9)(-1) = -18   |   (6)(3)(1) = 18
+#### *Paso 2: Sumar los productos*
+    (-18) + 18 = 0
+#### *Resultado: det(C) = 0*
+
+$$ D =
+\begin{pmatrix}
+0 & 5 \\
+-5 & 0 \\
+\end{pmatrix}
+$$
+
+### Procedimiento 
+#### *Paso 1: Multiplicar en diagonal*
+    (-5)(5)(-1) = 25   |   (0)(0)(1) = 0
+#### *Paso 2: Sumar los productos*
+    25 + 0 = 25
+#### **Resultado:** det(D) = 25
+
+---
+
+## Ejercicio 2: Regla de Sarrus
+### Usa Sarrus para calcular:
+
+$$ E =
+\begin{pmatrix}
+1 & 2 & 3 \\
+0 & 4 & 1 \\
+5 & 6 & 0 \\
+\end{pmatrix}
+$$
+
+#### *Paso 1: Bajar las 2 filas de arriba*
+
+$$
+\begin{matrix}
+1 & 2 & 3 \\
+0 & 1 & 4 \\
+5 & 6 & 0 \\
+1 & 2 & 3 \\
+0 & 1 & 4 \\
+\end{matrix}
+$$
+
+#### *Paso 2: Multiplicar forma ascendente*
+    (0)(2)(0)(-1) = 0
+    (1)(6)(4)(-1) = -24
+    (5)(1)(3)(-1) = -15
+
+#### *Paso 3: Multiplicar de forma descendente*
+    (1)(1)(0)(1) = 0
+    (0)(6)(3)(1) = 0
+    (5)(2)(4)(1) = 40
+
+#### *Paso 4: Sumar los resultados de la diagonales*
+    40 - 39 = 1
+#### *Resultado:* det(E) = 1
+
+$$ F =
+\begin{pmatrix}
+2 & -1 & 3 \\
+1 & 4 & 0 \\
+3 & 2 & -2 \\
+\end{pmatrix}
+$$
+
+#### *Paso 1: bajar las 2 filas de arriba*
+
+$$
+\begin{matrix}
+2 & -1 & 3 \\
+1 & 4 & 0 \\
+3 & 2 & -2 \\
+2 & -1 & 3 \\
+1 & 4 & 0 \\
+\end{matrix}
+$$
+
+#### *Paso 2: Multiplicar forma ascendente*
+    (1)(-1)(-2)(-1) = -2
+    (-2)(2)(0)(-1) = 0
+    (3)(4)(3)(-1) = -36
+
+#### *Paso 3: Multiplicar de forma descendente*
+    (2)(4)(-2)(1) = -16
+    (1)(2)(3)(1) = 6
+    (3)(-1)(0)(1) = 0
+
+#### *Paso 4: Sumar los resultados de la diagonales*
+    -52 + 6 = -48
+    
+#### *Resultado:* det(F) = -48
+
+---
+
+## Ejercicio 3: Método de cofactores
+### Calcula usando cofactores (expandir por la fila o columna más conveniente)
+
+$$ G =
+\begin{pmatrix}
+1 & 0 & 2 \\
+-1 & 3 & 1 \\
+2 & 0 & 1 \\
+\end{pmatrix}
+$$
+
+#### *Paso 1: A la primera columna se le agrega el signo +, y se va alternando el signo*
+
+$$ G =
+\begin{pmatrix}
+(+) & (-) & (+) \\
+1 & 0 & 2 \\
+-1 & 3 & 1 \\
+2 & 0 & 1 \\
+\end{pmatrix}
+$$
+
+#### *Paso 2: Aplicar la expansión por cofactores en la primera fila.* 
+    Se multiplica cada elemento de la primera fila por el determinante de su menor correspondiente, respetando el signo (+,-,+) asignado previamente:
+
+$$ det(G) = 1
+\begin{bmatrix}
+3 & 1 \\
+0 & 1 \\
+\end{bmatrix}  - 0
+\begin{bmatrix}
+-1 & 1 \\
+2 & 1 \\
+\end{bmatrix} +2
+\begin{bmatrix}
+-1 & 3 \\
 2 & 0 \\
-1 & 3 
-\end{bmatrix}, \quad C = \begin{bmatrix}
-1 & 1 \\
-0 & 2
-\end{bmatrix} $$
+\end{bmatrix}
+$$
 
-*Verificar que* $(AB)C = A(BC)$
+#### *Paso 3: Multiplicar y sumar los resultados*
+    det(G) = 1 (3 - 0) - 0 (-1 - 2)+ 2(0 - 6)
+    det(G) = 3 - 12
+    det(G) = -9
 
-### a) Calcular (AB)C 
-$$ AB = \begin{bmatrix}
-(1\cdot2) + (2\cdot1) & (1\cdot0) + (2\cdot3) \\
-(3\cdot2) + (4\cdot1) & (3\cdot0) + (4\cdot3)
-\end{bmatrix} => \begin{bmatrix}
-2 + 2 & 0 + 6 \\
-6 + 4 & 0 + 12
-\end{bmatrix} => \begin{bmatrix}
-4 & 6 \\
-10 & 12
-\end{bmatrix} $$
+#### *Respuesta:* det(G) = -9
 
-$$ (AB)C = \begin{bmatrix}
-(4\cdot1) + (6\cdot0) & (4\cdot1) + (6\cdot2) \\
-(10\cdot1) + (12\cdot0) & (10\cdot1) + (12\cdot2)
-\end{bmatrix} => \begin{bmatrix}
-4 + 0 & 4 + 12 \\
-10 + 0 & 10 + 24
-\end{bmatrix} => \begin{bmatrix}
-4 & 16 \\
-10 & 34
-\end{bmatrix} $$
+---
 
-### b) Calcular A(BC) 
-$$ BC = \begin{bmatrix}
-(2\cdot1) + (0\cdot0) & (2\cdot1) + (0\cdot2) \\
-(1\cdot1) + (3\cdot0) & (1\cdot1) + (3\cdot2)
-\end{bmatrix} => \begin{bmatrix}
-2 + 0 & 2 + 0 \\
-1 + 0 & 1 + 6
-\end{bmatrix} => \begin{bmatrix}
-2 & 2 \\
-1 & 7
-\end{bmatrix} $$
-$$ A(BC) = \begin{bmatrix}
-(1\cdot2) + (2\cdot1) & (1\cdot2) + (2\cdot7) \\
-(3\cdot2) + (4\cdot1) & (3\cdot2) + (4\cdot7)
-\end{bmatrix} = \begin{bmatrix}
-2 + 2 & 2 + 14 \\
-6 + 4 & 6 + 28
-\end{bmatrix} => \begin{bmatrix}
-4 & 16 \\
-10 & 34
-\end{bmatrix} $$
+## Ejercicio 4: Verificar propiedades 
+### Dadas A y B, Verifica que:
 
-*Veredicto final*: Se verifica que $(AB)C y A(BC)$ **son iguales** puesto que resultan con los mismos elementos en su matriz.
+- **det(AB) = det(A) x det(B)**
+
+#### det(AB)=
+
+$$ A =
+\begin{pmatrix}
+2 & 1 \\
+1 & 3 \\
+\end{pmatrix}
+$$
+
+$$ B =
+\begin{pmatrix}
+1 & 2 \\
+3 & 1 \\
+\end{pmatrix}
+$$
+
+#### *Paso 1: Multiplicar la matriz A por la Matriz B*
+
+$$ AB =
+\begin{bmatrix}
+(2)(1) & (2)(2) \\
+(1)(3) & (1)(1) \\
+(1)(1) & (1)(2) \\
+(3)(3) & (3)(1) \\
+\end{bmatrix}
+$$
+
+#### *Paso 2: Sumar el resultado de las multiplicaciones.* 
+$$ AB =
+\begin{bmatrix}
+2 + 3 & 4 + 1 \\
+1 + 9 & 2 + 3 \\
+\end{bmatrix}
+$$
+
+#### *Paso 3: Se escribe la matriz*
+$$ AB =
+\begin{pmatrix}
+5 & 5 \\
+10 & 5 \\
+\end{pmatrix}
+$$
+
+#### Calcular la determinanate de AB
+#### *Paso 4: Multiplicar en diagonal*
+    (5)(5) = 25   |   (5)(10)(-1) = -50
+#### *Paso 5: Sumar los resultados de las multiplicaciones*
+    25 - 50 = -25
+#### *Respuesta:* det(AB)=-25
+
+#### det(A) x det(B)
+
+$$ A =
+\begin{pmatrix}
+2 & 1 \\
+1 & 3 \\
+\end{pmatrix}
+$$
+
+#### Calcular la determinante de A
+#### *Paso 1: Multiplicar en diagonal*
+    (2)(3) = 6   |   (1)(1) = -1
+#### *Paso 2: Sumar los resultados de las multiplicaciones*
+    6 - 1 = 5
+#### *Resultado:* det(A)=5
+
+$$ B =
+\begin{pmatrix}
+1 & 2 \\
+3 & 1 \\
+\end{pmatrix}
+$$
+
+#### Calcular la determinanate de B
+#### *Paso 1: Multiplicar en diagonal*
+    (1)(1)(1) = 1   |   (3)(2)(-1)=-6
+#### *Paso 2: Sumar los resultados de las multiplicaciones*
+    1 - 6 = -5
+#### *Resultado:* det(B)=-5
+#### *Paso 3: Multiplicar las determinanates de A y B*
+    det(A) x det(B) = (5)(-5) = -25
+
+#### COMPARAR LA DETERMINANTE DE AB Y DE A x B
+#### det(AB) = det(A) x det(B)
+    -25 = -25
+#### Se comprueba que efectivamente, son iguales
+
+- **det(A ^T)= det(A)**
+
+$$ A =
+\begin{pmatrix}
+2 & 1 \\
+1 & 3 \\
+\end{pmatrix}
+$$
+
+---
+
+#### Calcular la determinanate de A
+#### *Paso 1: Multiplicar en diagonal*
+    (2)(3)(1) = 6   |   (1)(1)(-1) = -1
+#### *Paso 2: Sumar los resultados de las multiplicaciones*
+    6 - 1 = 5
+#### *Resultado:* det(A)=5
+
+#### Escribir la transpuesta de A
+
+$$ A ^T =
+\begin{pmatrix}
+2 & 1 \\
+1 & 3 \\
+\end{pmatrix}
+$$
+#### Calcular la determinanate de A ^T
+#### *Paso 1: Multiplicar en diagonal*
+    (2)(3)(1) = 6   |   (1)(1)(-1) = -1
+#### *Paso 2: Sumar los resultados de las multiplicaciones*
+    6 - 1 = 5
+#### *Resultado:* det(A ^T)=5
+
+#### Comparamos
+#### det(A ^T)=det(A)
+    5 = 5
+#### Se comprueba que son iguales
+
+
+## Ejercicio 5: Aplicaciones geometricas 
+### Dados los vectores u=(3,2) y v=(1,4)
+
+#### a) Calcula el área del paralelogramo que forman 
+
+$$ A =
+\begin{pmatrix}
+3 & 2 \\
+1 & 4 \\
+\end{pmatrix}
+$$
+
+#### Calcular la determinanate de A
+#### *Paso 1: Multiplicar en diagonal*
+    (3)(4)(1) = 12   |   (1)(2)(-1) = -2
+#### *Paso 2: Sumar los resultados de las multiplicaciones*
+    10 - 12 = 10
+#### *Resultado:* det(A)=10
+#### El Area es: Area=10
+
+#### b) ¿Cambia el área si intercambias los vectores?
+
+#### Paso 1: Intercambiar vectores
+$$ A =
+\begin{pmatrix}
+3 & 2 \\
+1 & 4 \\
+\end{pmatrix} => \\ B = 
+\begin{pmatrix}
+1 & 4 \\
+3 & 2 \\
+\end{pmatrix} 
+$$ 
+
+#### Calcular la determinanate de B
+#### *Paso 1: Multiplicar en diagonal*
+    (1)(2)(1) = 2   |   (3)(4)(-1) = -12
+#### *Paso 2: Sumar los resultados de las multiplicaciones*
+    -12 + 2=-10
+#### *Resultado:* det(B) = -10
+#### El Area es: Area = -10
+#### El area SÍ cambia si intercambias los vectores
+
+#### c) ¿Qué representa el signo del teterminante?
+#### La forma en la que se acomodan los vectores.
