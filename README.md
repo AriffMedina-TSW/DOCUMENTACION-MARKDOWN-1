@@ -7,7 +7,7 @@
 ---
 # Objetivo
 
-Lograr implementar operaciones con matrices usando dibujos hechos en un archivo Excel.
+Lograr implementar y documentar el proceso de las operaciones con matrices usando dibujos hechos en un archivo Excel, aplicando conocimientos de operaciones matriciales y manejo de imagenes.
 
 ---
 
@@ -21,16 +21,16 @@ Lograr implementar operaciones con matrices usando dibujos hechos en un archivo 
 ```
 ## Aplicar formato condicional
 ```
-1. En la pestaña 'Home' en el apartado de *styles* seleccionar 'formato condicional'
+1. En la pestaña 'Home' en el apartado de styles seleccionar 'formato condicional'
 2. Crear  nueva regla
 3. Establecer los parámetros de Minimun y Maximum en tipo númerico
 4. Establecer valores (Minimum = 0 y Maximum = 1)
-5. Asignar colores (Minimum un color oscuro y Maximum un color claro
+5. Asignar colores (Minimum - blanco y Maximum - negro)
 ```
 
 # Paso 2. Insertar dibujos 
 ```
-1. Copiar los siguientes valores en la cuadricula estasblecida
+1. Copiar los siguientes valores en la cuadricula establecida
 
 ```
 ### Dibujo1: Pibble Alien
