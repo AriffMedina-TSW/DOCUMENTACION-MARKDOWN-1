@@ -2,7 +2,7 @@
 ## Materia: Fundamentos de álgebra
 ## Alumno: Ariff Iazid Medina Gómez
 ## Grupo: C
-## Actividad #22. Última documentación
+## Actividad #20. Documentación de matrices con Git Branches
 
 ---
 # Objetivo
